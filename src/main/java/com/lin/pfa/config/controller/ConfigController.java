@@ -1,4 +1,4 @@
-package com.linh.pfa.config.controller;
+package com.lin.pfa.config.controller;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -12,19 +12,19 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.linh.pfa.api.common.Action;
-import com.linh.pfa.api.common.AssetCategory;
-import com.linh.pfa.api.common.ConfigServiceApi;
-import com.linh.pfa.api.common.Currency;
-import com.linh.pfa.api.common.Exchange;
-import com.linh.pfa.config.entity.ActionEntity;
-import com.linh.pfa.config.entity.ActionRepository;
-import com.linh.pfa.config.entity.AssetCategoryEntity;
-import com.linh.pfa.config.entity.AssetCategoryRepository;
-import com.linh.pfa.config.entity.CurrencyEntity;
-import com.linh.pfa.config.entity.CurrencyRepository;
-import com.linh.pfa.config.entity.ExchangeEntity;
-import com.linh.pfa.config.entity.ExchangeRepository;
+import com.lin.pfa.api.common.Action;
+import com.lin.pfa.api.common.AssetCategory;
+import com.lin.pfa.api.common.ConfigServiceApi;
+import com.lin.pfa.api.common.Currency;
+import com.lin.pfa.api.common.Exchange;
+import com.lin.pfa.config.entity.ActionEntity;
+import com.lin.pfa.config.entity.ActionRepository;
+import com.lin.pfa.config.entity.AssetCategoryEntity;
+import com.lin.pfa.config.entity.AssetCategoryRepository;
+import com.lin.pfa.config.entity.CurrencyEntity;
+import com.lin.pfa.config.entity.CurrencyRepository;
+import com.lin.pfa.config.entity.ExchangeEntity;
+import com.lin.pfa.config.entity.ExchangeRepository;
 
 @RestController
 @RequestMapping("/config")

@@ -1,11 +1,11 @@
-package com.linh.pfa.config.entity;
+package com.lin.pfa.config.entity;
 
 import java.math.BigDecimal;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 
-import com.linh.common.base.BaseEntity;
+import com.lin.common.base.BaseEntity;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

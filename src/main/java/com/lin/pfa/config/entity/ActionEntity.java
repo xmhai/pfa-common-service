@@ -1,8 +1,8 @@
-package com.linh.pfa.config.entity;
+package com.lin.pfa.config.entity;
 
 import javax.persistence.Entity;
 
-import com.linh.common.base.BaseEntity;
+import com.lin.common.base.BaseEntity;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
