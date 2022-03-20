@@ -44,8 +44,6 @@ public class ConfigController implements ConfigServiceApi {
 	public ResponseEntity<List<Currency>> getCurrencies() {
 		List<CurrencyEntity> l = currencyRespository.findAll();
 		
-		//List<Currency> currencies = new ArrayList<Currency>();
-		//mapper.map(l, currencies);
 		Type listType = new TypeToken<List<Currency>>(){}.getType();
 		List<Currency> currencies = mapper.map(l, listType);
 		
@@ -57,8 +55,8 @@ public class ConfigController implements ConfigServiceApi {
 	public ResponseEntity<List<AssetCategory>> getCategoris() {
 		List<AssetCategoryEntity> l = categoryRespository.findAll();
 
-		List<AssetCategory> categories = new ArrayList<AssetCategory>();
-		mapper.map(l, categories);
+		Type listType = new TypeToken<List<AssetCategory>>(){}.getType();
+		List<AssetCategory> categories = mapper.map(l, listType);
 		
 		return ResponseEntity.ok(categories);
 	}
@@ -67,8 +65,8 @@ public class ConfigController implements ConfigServiceApi {
 	public ResponseEntity<List<Exchange>> getExchanges() {
 		List<ExchangeEntity> l = exchangeRespository.findAll();
 
-		List<Exchange> exchanges = new ArrayList<Exchange>();
-		mapper.map(l, exchanges);
+		Type listType = new TypeToken<List<Exchange>>(){}.getType();
+		List<Exchange> exchanges = mapper.map(l, listType);
 		
 		return ResponseEntity.ok(exchanges);
 	}
@@ -77,8 +75,8 @@ public class ConfigController implements ConfigServiceApi {
 	public ResponseEntity<List<Action>> getTransactionTypes() {
 		List<ActionEntity> l = actionRespository.findAll();
 
-		List<Action> actions = new ArrayList<Action>();
-		mapper.map(l, actions);
+		Type listType = new TypeToken<List<Action>>(){}.getType();
+		List<Action> actions = mapper.map(l, listType);
 		
 		return ResponseEntity.ok(actions);
 	}
